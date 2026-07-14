@@ -124,6 +124,10 @@ EOF
 
 echo "========================================================================="
 echo " CONFIGURATION REBUILD COMPLETE! "
+# Define ANSI color codes
+GREEN='\033[1;32m' # 1;32m makes it Bold Green
+NC='\033[0m'       # No Color (Resets the terminal)
 echo " Please run the below command to restart the database:"
-echo " /usr/pgsql-16/bin/pg_ctl start -D /var/lib/pgsql/postgres-lab01 "
+echo -e " Please run: ${GREEN}/usr/pgsql-16/bin/pg_ctl restart -D /var/lib/pgsql/postgres-lab01${NC} to apply changes."
 echo "========================================================================="
+
