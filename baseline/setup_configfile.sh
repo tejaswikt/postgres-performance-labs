@@ -20,7 +20,7 @@ cat << 'EOF' > 00-extensions.conf
 # ============================================================
 # Shared Libraries and Extensions
 # ============================================================
-shared_preload_libraries = 'pg_stat_statements, pg_cron'
+shared_preload_libraries = 'pg_stat_statements, pg_wait_sampling, pg_cron'
 EOF
 
 echo "=== 3. Writing 01-performance.conf ==="
